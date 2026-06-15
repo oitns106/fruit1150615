@@ -189,7 +189,7 @@ class _AuthPageState extends State<AuthPage> {
 final GlobalKey<NavigatorState> navigatorKey=GlobalKey<NavigatorState>();
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin=FlutterLocalNotificationsPlugin();
 const AndroidNotificationChannel channel=AndroidNotificationChannel(
-  'high_importance_channel',
+  'high_importance_channel',          //與AndroidManifest.xml中所定義的channel id一致
   '促銷通知',
   description: '優惠訊息',
   importance: Importance.max,
